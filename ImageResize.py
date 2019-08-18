@@ -37,7 +37,7 @@ except FileNotFoundError:
     exit(0)
 
 except ImportError:
-    os.system("python -m pip install Image")
+    os.system("python -m pip install requirements.txt")
     print("I am installing the missing packages.")
     exit(0)
 
