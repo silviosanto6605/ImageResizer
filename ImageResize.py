@@ -1,10 +1,10 @@
 #pylint:disable=E0602
 #!usr/bin/env/python3
 
+import os
 try:
     import PIL
     from PIL import Image
-    import os
 
     WannaGoOn = True
 
