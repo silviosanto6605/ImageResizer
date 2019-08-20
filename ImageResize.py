@@ -1,5 +1,5 @@
-# pylint:disable=E0602
 # !usr/bin/env/python3
+
 
 __author__ = "Silvio Santoriello"
 import os
