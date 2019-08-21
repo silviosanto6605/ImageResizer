@@ -1,5 +1,11 @@
 .idea/*
 *.png
 *.jpg
+*.jpeg
+*.tiff
+*.psd
+*.pdf
+*.ai
+*.raw
 *.gif
 venv/
