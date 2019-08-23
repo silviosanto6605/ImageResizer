@@ -8,8 +8,12 @@ import sys
 try:
     import PIL
     from PIL import Image
+    import pyfiglet
+    from pyfiglet import Figlet
     import platform
 
+    f = Figlet(font='standard')
+    print(f.renderText('ImageConverter'))
     print("ImageConverter 1.0 by Silvio Santoriello\n",os.uname())
 
     path = input("Insert image name ")
