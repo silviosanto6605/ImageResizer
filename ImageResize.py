@@ -8,9 +8,7 @@ import sys
 try:
     import PIL
     from PIL import Image
-    import pyfiglet
     from pyfiglet import Figlet
-    import platform
 
     f = Figlet(font='standard')
     print(f.renderText('ImagerResizer'))
@@ -56,7 +54,7 @@ except FileNotFoundError:
     sys.exit()
 
 except ImportError:
-    os.system("pip3 install -r requirements.txt")
+    os.system("pip3 install --user -r requirements.txt")
     print("I am installing the missing packages.")
     sys.exit()
 
@@ -72,3 +70,6 @@ except OverflowError:
 except FileExistsError:
     print("Uno o più file possiedono un nome che coincide con un altro file esistente sull'hard drive. Cambia nome o elimina i file che sono in conflitto")
 
+except OSError:
+    print("Se visualizzi l'errore, hai fatto una di queste cose:\nL'immagine ridimensionata supera il limite di 65500 pixel.\n Hai selezionato un file non valido, corrotto o non riconosciuto. Usa ImageConvert.py per convertire l'immagine oppure seleziona un file valido")
+    print("ATTENZIONE: Il file ora generato è corrotto.")
