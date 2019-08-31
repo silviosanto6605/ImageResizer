@@ -4,7 +4,7 @@
 __author__ = "Silvio Santoriello"
 import os
 import sys
-
+import platform
 try:
     import PIL
     from PIL import Image
@@ -12,7 +12,7 @@ try:
 
     f = Figlet(font='standard')
     print(f.renderText('ImagerResizer'))
-    print("ImageResizer 1.0 by Silvio Santoriello\n",os.uname())
+    print("ImageResizer 1.0 by Silvio Santoriello\n",platform.uname())
 
     imageFile = input("Insert the image name ")
     im1 = Image.open(imageFile)
