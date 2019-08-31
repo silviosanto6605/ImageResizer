@@ -4,14 +4,14 @@
 __author__ = "Silvio Santoriello"
 import os
 import sys
-
+import platform
 try:
     from PIL import Image
     from pyfiglet import Figlet
 
     f = Figlet(font='standard')
     print(f.renderText('ImageConverter'))
-    print("ImageConverter 1.0 by Silvio Santoriello\n",os.uname())
+    print("ImageConverter 1.0 by Silvio Santoriello\n",platform.uname())
 
     path = input("Insert image name ")
     im = Image.open(path)
