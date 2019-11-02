@@ -54,7 +54,7 @@ except FileNotFoundError:
     sys.exit()
 
 except ImportError:
-    os.system("pip3 install --user -r requirements.txt")
+    os.system("pip3 install -r requirements.txt")
     print("I am installing the missing packages.")
     sys.exit()
 
