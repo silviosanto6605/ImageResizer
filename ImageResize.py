@@ -6,8 +6,8 @@ import os
 import sys
 import platform
 try:
-    import Pillow
-    from Pillow import Image
+    import PIL
+    from PIL import Image
     from pyfiglet import Figlet
 
     f = Figlet(font='standard')
