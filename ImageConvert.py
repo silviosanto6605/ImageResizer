@@ -27,4 +27,4 @@ except MemoryError:
 except ImportError:
     os.system("pip3 install --user -r requirements.txt")
     print("I am installing the missing packages.")
-    sys.exit()
+    os.exit()
